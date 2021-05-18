@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>翻译效率和质量评估</title>
+<link rel="stylesheet" href="css/navigation-single.css">
+<link rel="stylesheet" href="css/single-display.css">
+</head>
+<body>
+
+    <ul>
+        <li><a href="index-摘要和引言.html">引言</a></li>
+        <li><a href="single 1-CAT技术概述.html">计算机辅助翻译技术概述</a></li>
+        <li><a href="single 2-字幕翻译特点.html">字幕翻译的特点及问题</a></li>
+        <li><a href="single 3-译视界产品介绍.html">人人译视界产品及功能介绍</a></li>
+        <li><a href="single 4-翻译质量评估.html">翻译效率和质量评估</a></li>
+        <li><a href="single 5-参考文献.html">结语和参考文献</a></li>
+        <li style="float:right"><a class="active" href="single 6-关于作者.html">关于作者</a></li>
+    </ul>
+
+<div class="main">
+    <div class="sidebar">
+        <br/>
+        <strong style="color:white;">小节目录</strong>
+        <br/>
+        <p><a href="#tag 4.1">4.1 机器翻译速度</a></p>
+        <p><a href="#tag 4.2">4.2 整体翻译效率</a></p>
+        <p><a href="#tag 4.3">4.3 机器翻译质量评价</a></p>
+        <p style="text-indent: 2em;"><a href="#tag 4.3.1">4.3.1 专有名词的翻译</a></p>
+        <p style="text-indent: 2em;"><a href="#tag 4.3.2">4.3.2 习语俗语的翻译</a></p>
+        <p style="text-indent: 2em;"><a href="#tag 4.3.3">4.3.3 普通句子的翻译</a></p>
+        <p style="text-indent: 2em;"><a href="#tag 4.3.4">4.3.4 歌词诗句的翻译</a></p>
+        <p style="text-indent: 2em;"><a href="#tag 4.3.5">4.3.5 小结</a></p>
+        <p><a href="#tag 4.4">4.4 智能纠错评价</a></p>
+        <p style="text-indent: 2em;"><a href="#tag 4.4.1">4.4.1 拼写检查质量评价</a></p>
+        <p style="text-indent: 2em;"><a href="#tag 4.4.2">4.4.2 一致性检查评价</a></p>
+        <p style="text-indent: 2em;"><a href="#tag 4.4.3">4.4.3 术语纠错评价</a></p>
+    </div>
+    <div class="clearfix">
+        <div class="content">
+            <h1><a name="page4"></a>4. 翻译效率和质量评估<a name="top4"></a></h1>
+            <h2><a name="tag 4.1">4.1 机器翻译速度</a></h2>
+                <p>为测试“人人译视界”客户端机器翻译速度，笔者选择不同类型和时长的字幕进行测试，包括影视剧集和短视频字幕，时长从3分钟到50分钟不等，时间轴数量从数十条到上千条不等，为了保证测试的准确性，笔者以时间轴数量为标准，分别记录“一键翻译”所用时间，测试结果见表1。</p>
+                <div align="center">
+                    <table border="0" frame="hsides" cellpadding="10">
+                        <caption>表1. “一键翻译”功能翻译速度测试结果</caption>
+                        <tr>
+                            <th>名称</th>
+                            <th>类型</th>
+                            <th>时间轴数量（条）</th>
+                            <th>一键翻译用时</th>
+                        </tr>
+                        <tr>
+                            <td align="center">小变色龙吉可</td>
+                            <td align="center">动画短片</td>
+                            <td align="center">57</td>
+                            <td align="center">00:03.01</td>
+                        </tr>
+                        <tr>
+                            <td align="center">咱们裸熊</td>
+                            <td align="center">动画短片</td>
+                            <td align="center">220</td>
+                            <td align="center">00:08.04</td>
+                        </tr>
+                        <tr>
+                            <td align="center">教师情事</td>
+                            <td align="center">电视剧</td>
+                            <td align="center">375</td>
+                            <td align="center">00:13.76</td>
+                        </tr>
+                        <tr>
+                            <td align="center">娃娃脸</td>
+                            <td align="center">电视剧</td>
+                            <td align="center">623</td>
+                            <td align="center">00:21.97</td>
+                        </tr>
+                        <tr>
+                            <td align="center">梅赛德斯先生</td>
+                            <td align="center">电视剧</td>
+                            <td align="center">997</td>
+                            <td align="center">00:33.53</td>
+                        </tr>
+                        <tr>
+                            <td align="center">两个教皇</td>
+                            <td align="center">电影</td>
+                            <td align="center">1948</td>
+                            <td align="center">01:03.90</td>
+                        </tr>
+                    </table>
+                </div>
+                <p>从以上六次测试结果来看，译视界“一键翻译”功能的翻译速度和字幕时间轴数量呈正相关关系，而且每一百条字幕大概用时三至四秒，翻译速度稳定。</p>
+            <h2><a name="tag 4.2">4.2 整体翻译效率</a></h2>
+                <p>字幕组译制流程中时间轴制作和字幕翻译是用时较长的两大环节。现在商务字幕翻译通常以项目的形式派发给字幕组，片源通常为纪录片、动画片、电视剧、综艺节目，翻译任务量也比较大，少则三四集，多则四五十集，如果不利用好当前的字幕翻译技术，字幕组译者将难堪重负。随着AI技术和CAT工具的发展，当前字幕组制作时间轴和翻译字幕的效率都大有改善。根据笔者自身实践经验，客户要求的翻译时限通常为3-7天，工作内容通常是时间轴制作、翻译和校对，如果不利用AI听译或机器翻译，完成单集普通电视剧的时间通常为2-3天小时，完成单集纪录片的时间通常为3-5天。如果使用AI听译或机器翻译，翻译电视剧的时间可减少4-12小时，翻译纪录片的时间可减少1-2天。因此，面对客户日益紧迫的要求，AI听译或机器翻译应用于字幕翻译工作显得更为重要。</p>
+            <h2><a name="tag 4.3">4.3 机器翻译质量评价</a></h2>
+                <p>译视界的“一键翻译”功能能极大提高字幕翻译工作效率，但是针对不同类型的影视作品，字幕翻译难度有高有低，机器翻译的质量自然也是参差不齐。笔者使用译视界“一键翻译”功能，预处理几部中外电视剧的字幕文件，并结合深影字幕组提供的人工翻译字幕文件，从专有名词、习语俗语、普通句子、歌词诗句等四个方面，对译视界“一键翻译”功能的机器翻译质量进行简要评价。</p>
+            <h3><a name="tag 4.3.1"></a>4.3.1 专有名词的翻译</h3>
+                <p>人名、地名、组织机构名等专有名词遍布中外影视作品的字幕，若非常见的专有名词，加之没有术语库辅助，机器翻译专有名词的质量有时难以让人满意。笔者在字幕翻译实践中发现，用机器翻译处理称呼语或头衔时，所得结果跟人工编辑差距十分明显。因为翻译字幕中的称呼语或头衔时，必须综合考虑影视剧集的画面场景、人物身份、剧情发展等因素，才能准确翻译。中国古装剧和英国历史剧中，由于文化历史背景的差异，王公贵族和朝中大臣的头衔难以找到对应绝佳的对应译文，君臣之间、长幼之间、主仆之间、亲戚之间所用的称呼语更是如此，所以如何处理这类专有名词也是字幕翻译中最棘手的问题，此处笔者欲以Netflix出品的历史剧《王冠》第四季第二集中最常出现的两个常见称呼语“ma’am”和“sir”为例，简要评价译视界机器翻译处理此类专有名词的能力。</p>
+                <p>《王冠》第四季第二集中主要谈及撒切尔夫人和尚未成为王妃的戴安娜在苏格兰巴尔莫勒尔被英国王室成员试探的经历。如表2所示，“ma’am”一词机器翻译只能处理为“女士”或“太太”，但是人工翻译却有“夫人”、“陛下”、“殿下”、“女士”四种不同的称呼。根据剧中对于贵族礼仪的解释，称呼女王陛下和公主殿下时，首次应用“Your Majesty”和“Your Royal Highness”，随后可用“ma’am”相称。“ma’am”在本剧中所指人物包括英女王伊丽莎白二世、玛格丽特公主、撒切尔夫人、戴安娜，机器翻译的结果固然是存在很多不合理的地方。</p>
+                <div align="center">
+                    <table border="0" frame="hsides" cellpadding="10">
+                        <caption>表2. 《王冠》第4季第2集中“ma’am”的翻译结果</caption>
+                        <tr>
+                            <th>原文字幕</th>
+                            <th>机器翻译</th>
+                            <th>人工翻译</th>
+                        </tr>
+                        <tr>
+                            <td align="center">They're both yours, ma'am.</td>
+                            <td align="center">他们都是你的了  女士</td>
+                            <td align="center">57</td>
+                        </tr>
+                        <tr>
+                            <td align="center">- Sorry, ma'am. - Thank you.</td>
+                            <td align="center">-抱歉  女士  -谢谢你</td>
+                            <td align="center">220</td>
+                        </tr>
+                        <tr>
+                            <td align="center">I couldn't help noticing, ma'am,</td>
+                            <td align="center">我不禁注意到  女士</td>
+                            <td align="center">375</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Good evening. Ma'am,</td>
+                            <td align="center">晚上好  太太</td>
+                            <td align="center">晚上好 夫人</td>
+                        </tr>
+                        <tr>
+                            <td align="center">I'm not, ma'am.</td>
+                            <td align="center">我没有  女士</td>
+                            <td align="center">我确实不喜欢 陛下</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Ma'am.</td>
+                            <td align="center">太太</td>
+                            <td align="center">陛下</td>
+                        </tr>
+                        <tr>
+                            <td align="center">they're going to the Loch Muick beach, ma'am.</td>
+                            <td align="center">是去密克湖滩 殿下</td>
+                            <td align="center">1948</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Good morning, ma'am. 5:30.</td>
+                            <td align="center">早上好  女士  5： 30岁</td>
+                            <td align="center">早上好 女士 现在是五点三十分</td>
+                        </tr>
+                    </table>
+                </div>
+                <p>同理，剧中称呼菲利普亲王、查尔斯王子殿下、撒切尔先生时也可以用“sir”。但表3当中，机器翻译甚至将“sir”译为“长官”，显然不符合剧情和人物设定。</p>
+                <div align="center">
+                    <table border="0" frame="hsides" cellpadding="10">
+                        <caption>表3. 《王冠》第4季第2集中Sir的翻译结果</caption>
+                        <tr>
+                            <th>原文字幕</th>
+                            <th>机器翻译</th>
+                            <th>人工翻译</th>
+                        </tr>
+                        <tr>
+                            <td align="center">Allow a little bit for the wind, sir.</td>
+                            <td align="center">给我点风  先生</td>
+                            <td align="center">风速也需略加考虑 先生</td>
+                        </tr>
+                        <tr>
+                            <td align="center">You hit him, sir, but that's him away now, wounded.</td>
+                            <td align="center">你打了他  长官  但他受伤了</td>
+                            <td align="center">你击中它了 先生 但它现在负伤逃走了</td>
+                        </tr>
+                        <tr>
+                            <td align="center">It's not that, sir.</td>
+                            <td align="center">不是那样的  先生</td>
+                            <td align="center">不是那个意思 先生</td>
+                        </tr>
+                        <tr>
+                            <td align="center">and sir, you're sitting on the left...</td>
+                            <td align="center">先生 你坐在左边</td>
+                            <td align="center">先生 您的位子在左侧...</td>
+                        </tr>
+                        <tr>
+                            <td align="center">- when you lived in the cottage there. - Yes, sir.</td>
+                            <td align="center">- 你住在一个乡间小屋 - 是的 殿下</td>
+                            <td align="center">晚上好 夫人</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Does that come from the army, sir?</td>
+                            <td align="center">这是军队的命令吗  长官</td>
+                            <td align="center">是在军队养成的习惯吗 殿下</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Oh, no, sir. My main job's as my sister's cleaning lady.</td>
+                            <td align="center">不  先生  我的主要工作是我姐姐的清洁工</td>
+                            <td align="center">不 殿下 我主要负责替我姐姐打扫卫生</td>
+                        </tr>
+                        <tr>
+                            <td align="center">- Sir. - What?</td>
+                            <td align="center">- 长官 - 怎么了</td>
+                            <td align="center">- 殿下 - 什么</td>
+                        </tr>
+                        <tr>
+                            <td align="center">It's the left, sir.</td>
+                            <td align="center">在左边  长官</td>
+                            <td align="center">是左边 先生</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Good shot, sir.</td>
+                            <td align="center">好枪法  长官</td>
+                            <td align="center">好枪法 殿下</td>
+                        </tr>
+                        <tr>
+                            <td align="center">But you shot him, sir.</td>
+                            <td align="center">但你开枪打了他  长官</td>
+                            <td align="center">但开枪的是您 殿下</td>
+                        </tr>
+                    </table>
+                </div>
+                <p>称呼语的翻译必须结合视频所构建的语言环境，机器翻译尚不具备分析字幕对应视频文件的能力，而且就算有术语库辅助，机器翻译也很难实现准确翻译称呼语，仍然需要人工译员进行译后编辑。</p>
+            <h3><a name="tag 4.3.2"></a>4.3.2 习语俗语的翻译</h3>
+                <p>翻译中英字幕时，译者总会碰到许多含有特定文化意义的习语俗语，需要采用恰当的翻译策略，让源语字幕所含习语俗语的译文被观众所接受。目前，在人人字幕组所提供的字幕语料支持下，机器翻译能够较好处理常见的习语俗语，但也有时难以完美契合所在句子的含义，翻译质量优劣不一。此处，笔者选取了《燕云台》、《权欲第二章：幽灵》、《私家侦探》三部电视剧中涉及成语和习语的中英文字幕进行简要分析。</p>
+                <p>《燕云台》属于中国古装剧，台词中自然不乏四字成语。“狼子野心”比喻凶暴的人居心狠毒，习性难改，而“囊中之物”则形容非常容易得到的东西，办到的事。如表4所示，机器翻译和人工翻译均意译“狼子野心”，但是由于该成语在字幕中接连出现两次，机器翻译未能处理赘述的问题。而“囊中之物”的机翻译文明显有误，并非是占据萧燕燕一家，而是轻视之意。</p>
+                <div align="center"> 
+                    <table border="0" frame="hsides" cellpadding="10">
+                        <caption>表4. 《燕云台》第17集部分字幕翻译结果</caption>
+                        <tr>
+                            <th>原文字幕</th>
+                            <th>机器翻译</th>
+                            <th>人工翻译</th>
+                        </tr>
+                        <tr>
+                            <td align="center">萧达凛 他狼子野心</td>
+                            <td align="center">Shel Darrin, he's ambitious</td>
+                            <td align="center">Xiao Dalin must harbor wicked intention.</td>
+                        </tr>
+                        <tr>
+                            <td align="center">你们才是狼子野心</td>
+                            <td align="center">You're the ones with the ambition</td>
+                            <td align="center">It is you who have that.</td>
+                        </tr>
+                        <tr>
+                            <td align="center">怎么着</td>
+                            <td align="center">What's up</td>
+                            <td align="center">So what?</td>
+                        </tr>
+                        <tr>
+                            <td align="center">我爹还没发话呢</td>
+                            <td align="center">My dad hasn't said anything yet</td>
+                            <td align="center">My father hasn't said a word.</td>
+                        </tr>
+                        <tr>
+                            <td align="center">你们就在这儿 把我们这一房当囊中之物了是吗</td>
+                            <td align="center">So this is where you take our house</td>
+                            <td align="center">Are you going to disregard my family?</td>
+                        </tr>
+                    </table>
+                </div>
+                <p>《权欲第二章：幽灵》是美国黑帮剧《权欲》的续集，该剧字幕中存在很多黑人英语和黑话，翻译难度略大。表5中，笔者选取了“chop it up”和“chip off the old block”两个习语表达，后者属于词典可查习语，所以机器翻译结果自然准确，只是语气、句义等细节问题上还需修改。但前者的词典释义通常是“切碎”，但是根据Urban Dictionary搜索结果显示，这个短语其实还有“和别人，尤其是长久未见的人交谈”的意思，机器翻译和人工翻译高下立见。</p>
+                <div align="center">
+                    <table border="0" frame="hsides" cellpadding="10">
+                        <caption>表5. 《权欲第二章：幽灵》第1季第10集部分字幕翻译结果</caption>
+                        <tr>
+                            <th>原文字幕</th>
+                            <th>机器翻译</th>
+                            <th>人工翻译</th>
+                        </tr>
+                        <tr>
+                            <td align="center">- Chop it up later. - Yeah.</td>
+                            <td align="center">-晚点再切  -是啊</td>
+                            <td align="center">- 稍后再谈 - 好的</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Chip off the old block, huh?</td>
+                            <td align="center">有其父必有其子</td>
+                            <td align="center">有其父必有其子啊</td>
+                        </tr>
+                    </table>
+                </div>
+                <p>《私家侦探》中习语表达都比较常见，能轻松在词典上获取释义。如表6所示，“hit and run”和“got cold feet”的机器翻译结果都比较准确，但是句子内部和句子之间的通顺程度还有待改进。不过，在这种情况下，机器翻译能够为译者提供可用的参考信息，从而节省查阅资料的时间，提高翻译效率。</p>
+                <div align="center">
+                    <table border="0" frame="hsides" cellpadding="10">
+                        <caption>表6. 《私家侦探》第4季第5集部分字幕翻译结果</caption>
+                        <tr>
+                            <th>原文字幕</th>
+                            <th>机器翻译</th>
+                            <th>人工翻译</th>
+                        </tr>
+                        <tr>
+                            <td align="center"> - So, what's going on? - My friend Mia brought a victim//of an alleged hit and run. She wants to see us.</td>
+                            <td align="center">-怎么了  -我朋友米娅带了一个受害者//肇事逃逸  她想见我们</td>
+                            <td align="center">- 出什么事了 - 我朋友米娅找到一个受害人//涉及袭击逃逸案 她想见咱们</td>
+                        </tr>
+                        <tr>
+                            <td align="center">I was getting ready for work this morning and I took it out//of my makeup bag to admire it then I got cold feet</td>
+                            <td align="center">我今早准备上班的时候把它拿出来了//然后我临阵退缩了</td>
+                            <td align="center">当时正准备上班 然后从化妆包里//把戒指拿出来欣赏一番 突然又泄气了</td>
+                        </tr>
+                    </table>
+                </div>
+                <p>对于习语俗语的翻译，机器翻译目前也不能达到很好的效果，词典和语料库未记录的习语或俗语一般只能采取直译方式处理，但就算有足够的语料库和词典库，如何将这些习语俗语转换为与句意和语境相匹配的译文，对于机器翻译而言仍是亟待解决的问题。不过，机器处理的习语俗语译文具有一定的参考价值，能有效提高翻译效率和准确性。</p>
+            <h3><a name="tag 4.3.3"></a>4.3.3 普通句子的翻译</h3>    
+                <p>影视字幕以不含特殊词汇和表达的普通句子为主。对于剧情和台词都比较简单的电视剧和动画，译视界“一键翻译”预处理后的字幕可看性很高，不会给观众造成理解上的困难，但仍然有影响审美效果的细节之处，需要译者进行译后编辑处理。《咱们裸熊》是一部美国动画片，台词和剧情都很贴近日常生活，单集时长在十分钟左右，翻译难度不高。如表7所示，机器翻译和人工翻译的译文都能很好的传达视频信息，只是句式表达和用词上有些许差别，但机器翻译的译文不会给观众造成很大的理解障碍。</p>
+                <div align="center">
+                    <table border="0" frame="hsides" cellpadding="10">
+                        <caption>表7. 《咱们裸熊》第4季第33集部分字幕翻译结果</caption>
+                        <tr>
+                            <th>原文字幕</th>
+                            <th>机器翻译</th>
+                            <th>人工翻译</th>
+                        </tr>
+                        <tr>
+                            <td align="center">Uh, Grizz, I don't think</td>
+                            <td align="center">灰灰  我觉得</td>
+                            <td align="center">大灰 我觉得</td>
+                        </tr>
+                        <tr>
+                            <td align="center">we should crash this perfectly nice picnic.</td>
+                            <td align="center">我们不该破坏这完美的野餐</td>
+                            <td align="center">咱不该搞砸这美好的野餐</td>
+                        </tr>
+                        <tr>
+                            <td align="center">- Hi! Excuse me, sir! - Buh?</td>
+                            <td align="center">-嗨 打扰一下 先生  -什么</td>
+                            <td align="center">- 嗨 抱歉 先生 - 什么事</td>
+                        </tr>
+                        <tr>
+                            <td align="center">You guys have room for a few more?</td>
+                            <td align="center">你们还有空位吗</td>
+                            <td align="center">我们能加入你们吗</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Oh, why, of course we do, bears.</td>
+                            <td align="center">当然了 熊</td>
+                            <td align="center">当然可以 熊熊们</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Just as long as you got room for a few burgers.</td>
+                            <td align="center">只要你还能吃几个汉堡</td>
+                            <td align="center">只要你们还吃得下几个汉堡</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Come on over, friends.</td>
+                            <td align="center">过来吧 朋友们</td>
+                            <td align="center">过来吧 朋友们</td>
+                        </tr>
+                        <tr>
+                            <td align="center">- Dude, thank you. - Oh, it's nothing.</td>
+                            <td align="center">- 哥们 谢谢你 - 没什么</td>
+                            <td align="center">- 谢谢你 兄弟 - 客气</td>
+                        </tr>
+                        <tr>
+                            <td align="center">I love making people happy with my cooking.</td>
+                            <td align="center">我喜欢用我的厨艺让别人开心</td>
+                            <td align="center">我希望我的厨艺能带给大家欢乐</td>
+                        </tr>
+                        <tr>
+                            <td align="center">I wish I could cook for everyone in the world, you know?</td>
+                            <td align="center">真希望我能为全世界的人做饭</td>
+                            <td align="center">知道吗 我希望能为全世界的人做菜</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Then there'd be no more sadness and no more pain, just smiles ...</td>
+                            <td align="center">这样就没有悲伤和痛苦 只有微笑</td>
+                            <td align="center">这样 世界就再无悲痛 只有欢笑</td>
+                        </tr>
+                        <tr>
+                            <td align="center">- Uh, dude, your stuff's burning.//- Ah, what!</td>
+                            <td align="center">- 哥们 你的东西烧起来了 - 什么</td>
+                            <td align="center">- 兄弟 你的东西烧着了- 什么</td>
+                        </tr>
+                        <tr>
+                            <td align="center">My beautiful burgers!</td>
+                            <td align="center">我美丽的汉堡</td>
+                            <td align="center">我美味的肉饼啊</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Don't worry, folks. I got this.</td>
+                            <td align="center">别担心 各位 交给我吧</td>
+                            <td align="center">别慌 伙计们 交给我吧/td>
+                        </tr>
+                    </table>
+                </div>
+                <p>相反，剧情和台词略有难度的电视剧中，机器和人工处理普通句子的能力还是存在很多差异的。此处，笔者以美国律政剧《傲骨之战》为例进行说明。如表8所示，“landslide”，“take something for granted”，“back in the news”，“weighed down for what feels like years”，“lifted”等都是很好翻译的词汇和表达，但鉴于本剧中人物都是知识分子，言谈举止自然要讲究，人工译者显然也意识到这一问题，“霄壤之殊”、“置若罔闻”、“不见不散”、“郁郁寡欢”、“雨过天晴”等四字格的使用，更直观地体现了机器翻译和人工翻译的差距。</p>
+                <div align="center">
+                    <table border="0" frame="hsides" cellpadding="10">
+                        <caption>表8. 《傲骨之战》第4季第1集部分字幕翻译结果</caption>
+                        <tr>
+                            <th>原文字幕</th>
+                            <th>机器翻译</th>
+                            <th>人工翻译</th>
+                        </tr>
+                        <tr>
+                            <td align="center">It was a landslide... three million votes.</td>
+                            <td align="center">压倒性的优势 三百万票</td>
+                            <td align="center">那简直是霄壤之殊 差距可有三百万票</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Good. We don't want to take her vote for granted.</td>
+                            <td align="center">那就好 我们不想把她的投票视为理所当然</td>
+                            <td align="center">很好 我们可不能对她那票置若罔闻</td>
+                        </tr>
+                        <tr>
+                            <td align="center">So, I will see you tonight at Women Unite for Change?</td>
+                            <td align="center">今晚妇女团结改变会上见</td>
+                            <td align="center">今晚女性改革会见</td>
+                        </tr>
+                        <tr>
+                            <td align="center">She will.</td>
+                            <td align="center">她会的</td>
+                            <td align="center">当然</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Yes, I will.</td>
+                            <td align="center">我会的</td>
+                            <td align="center">不见不散</td>
+                        </tr>
+                        <tr>
+                            <td align="center">the Travel Office Scandal is back in the news,</td>
+                            <td align="center">旅行社丑闻又上了新闻</td>
+                            <td align="center">"旅行门"重回民众视线</td>
+                        </tr>
+                        <tr>
+                            <td align="center">I have been weighed down for what feels like years,</td>
+                            <td align="center">我被压了好几年</td>
+                            <td align="center">我郁郁寡欢太久</td>
+                        </tr>
+                        <tr>
+                            <td align="center">and it-it just all suddenly lifted.</td>
+                            <td align="center">然后突然间就没事了</td>
+                            <td align="center">如今终于雨过天晴</td>
+                        </tr>
+                    </table>
+                </div>
+            <h3><a name="tag 4.3.4"></a>4.3.4 歌词诗句的翻译</h3>
+                <p>字幕翻译中，歌词和诗歌可谓是译者不得不面临的“两座大山”，中英歌词诗句在音韵格律、意象选择、文体风格上就存在巨大差别，对译员的双语运用能力和跨文化意识是极大的考验。就目前而言，机器翻译的歌词诗句是不可用的。笔者此处选择《王冠》和《燕云台》为例，说明机器翻译目前不可用于字幕中歌词诗句的翻译。</p>
+                <p>《王冠》第一季第一集中出现过一段英文打油诗，如表9所示，从原文字幕来看，除第三句外，其他句子都压尾韵[æli]，但是机器翻译引擎自然无法分辨出这四句字幕属于诗歌，也无法察觉到音韵上的特点。人工翻译时，译者显然有意识地处理成了处理为中文打油诗，并保证押韵的句子和原文保持一致，很好地再现了字幕的艺术效果。</p>
+                <div align="center">
+                    <table border="0" frame="hsides" cellpadding="10">
+                        <caption>表9. 《王冠》第1季第1集诗歌字幕翻译结果</caption>
+                        <tr>
+                            <th>原文字幕</th>
+                            <th>机器翻译</th>
+                            <th>人工翻译</th>
+                        </tr>
+                        <tr>
+                            <td align="center">There was a young lady named Sally,</td>
+                            <td align="center">有个叫莎莉的年轻姑娘</td>
+                            <td align="center">有个姑娘叫萨莉</td>
+                        </tr>
+                        <tr>
+                            <td align="center">who enjoyed the occasional dally,</td>
+                            <td align="center">喜欢偶尔闲逛</td>
+                            <td align="center">水性杨花爱调戏</td>
+                        </tr>
+                        <tr>
+                            <td align="center">she sat on the lap of a well-endowed chap</td>
+                            <td align="center">她坐在一个体格健壮的小伙子的大腿上</td>
+                            <td align="center">坐在俊男大腿上</td>
+                        </tr>
+                        <tr>
+                            <td align="center">and cried, "Sir! You're right up my alley!"</td>
+                            <td align="center">大喊 先生 你正合我胃口</td>
+                            <td align="center">惊呼找的就是你</td>
+                        </tr>
+                        <tr>
+                    </table>
+                </div>
+                <p>《燕云台》的片头曲和片尾曲均富含很多中国独有的文化意象。如表10所示，片头曲中“楼台烟雨”、“罗衣金甲”、“钗头花”、“天涯”、“红袖”这些意象的寓意对于外国观众而言是难以理解的，而且歌词押[a]、[ia]、[ua]三个音，翻译难度很大。表8中，机器翻译的字幕以直译为主，意象基本得到保留，但是原文字幕的音韵特点均未得到再现。由于该电视剧在腾讯视频国内版和海外版同步上映，单集字幕翻译时间仅有24小时，客户仅要求译文意思正确、无语法错误即可，质量不算上乘，加之译者能力有限，除“楼台烟雨 罗衣金甲”、“苍穹何时画”、“庭院清风 绣春芽”、“闻天涯 阅诸家”、“谁让红袖惹天下”这几句外，人工翻译和机器翻译的差异并不大。但若能让高水平译者在充足的时间内翻译这些歌词字幕，结果定能比机器翻译更令人满意。</p>
+                <div align="center">
+                    <table border="0" frame="hsides" cellpadding="10">
+                        <caption>表10. 《燕云台》片头曲字幕翻译结果</caption>
+                        <tr>
+                            <th>原文字幕</th>
+                            <th>机器翻译</th>
+                            <th>人工翻译</th>
+                        </tr>
+                        <tr>
+                            <td align="center">燕雀跃云霞</td>
+                            <td align="center">The sparrow in the sky</td>
+                            <td align="center">Birds over the clouds</td>
+                        </tr>
+                        <tr>
+                            <td align="center">辽原驰骏马</td>
+                            <td align="center">On a horse from the distant plains</td>
+                            <td align="center">Horses over the steppe</td>
+                        </tr>
+                        <tr>
+                            <td align="center">楼台烟雨 罗衣金甲</td>
+                            <td align="center">The buildings were made of rain and gold</td>
+                            <td align="center">Misty rain, armor suit</td>
+                        </tr>
+                        <tr>
+                            <td align="center">月下风中花</td>
+                            <td align="center">Beneath the moon in the wind</td>
+                            <td align="center">Flower blossom under the moon breeze</td>
+                        </tr>
+                        <tr>
+                            <td align="center">苍穹何时画</td>
+                            <td align="center">When will the sky be painted</td>
+                            <td align="center">When did the universe start?</td>
+                        </tr>
+                        <tr>
+                            <td align="center">明月照谁家</td>
+                            <td align="center">Whose house does the moon shine on</td>
+                            <td align="center">Who will the moon shine on?</td>
+                        </tr>
+                        <tr>
+                            <td align="center">庭院清风 绣春芽</td>
+                            <td align="center">The garden is green with the wind and the shoots</td>
+                            <td align="center">Spring breeze sprouts buds in trees</td>
+                        </tr>
+                        <tr>
+                            <td align="center">解人心头话</td>
+                            <td align="center">That's what I'm talking about</td>
+                            <td align="center">and breathes new life in me</td>
+                        </tr>
+                        <tr>
+                            <td align="center">爱似歌 情如画</td>
+                            <td align="center">Love is a song, love is a picture</td>
+                            <td align="center">Love is a song, passion a painting</td>
+                        </tr>
+                        <tr>
+                            <td align="center">梦落在我钗头花</td>
+                            <td align="center">Dreams are falling on my head</td>
+                            <td align="center">Dream falls at the flower of my hairpin</td>
+                        </tr>
+                        <tr>
+                            <td align="center">闻天涯 阅诸家</td>
+                            <td align="center">I've heard so much about you</td>
+                            <td align="center">Been around the world, seen it all</td>
+                        </tr>
+                        <tr>
+                            <td align="center">谁让红袖惹天下</td>
+                            <td align="center">Who let red shirt get in the way</td>
+                            <td align="center">Have the universe under my sleeve</td>
+                        </tr>
+                    </table>
+                </div>
+            <h3><a name="tag 4.3.5"></a>4.3.5 小结</h3>
+                <p>译视界机器翻译引擎有字幕语料做支撑，“一键翻译”功能处理简单句的能力非常强大，译文字幕可看性很高，不会给观众造成过大的理解障碍。处理习语俗语的能力还有待提高，不过可以给字幕译者提供较为可靠的参考信息。而需要结合视频内容翻译的字幕、歌词字幕、诗词字幕均是机器翻译的弱项，均需字幕译者进行人工编辑。总体而言，译视界“一键翻译”功能可以帮助译者快速理解原文字幕，提高自身翻译效率。</p>
+            <h2><a name="tag 4.4">4.4 智能纠错评价</a></h2>
+            <h3><a name="tag 4.4.1"></a>4.4.1 拼写检查质量评价</h3>
+                <p>为简要评价译视界拼写检查质量，笔者选取了《燕云台》第39集腾讯海外版英文字幕和《超级维修站》第一集中文字幕，分别以美国口音和普通话（大陆地区）为条件进行拼写检查，检查结果如图所示。经检查，《燕云台》第39集的英文字幕共有208处错误，错误程度较高的字幕，修改建议中已将错误之处黄色高亮显示。如图所示，本集字幕的错误类型多样，经统计，包含歌曲翻译、人名地名、英美差异、语法错误、拼写错误、标点误用六种类型，笔者已将相应的字幕和修改意见呈现于表11中，鉴于检查出的歌词和人名地名错误过多，笔者各选取一个例句。</p>
+                <div align="center">
+                    <img src="images/29.png" width="720"/>
+                    <br/>
+                    <span>图29. 《燕云台》第39集英文字幕拼写检查结果（部分）</span>
+                </div>
+                <div align="center">
+                    <img src="images/30.png" width="720"/>
+                    <br/>
+                    <span>图30. 《燕云台》第39集英文字幕拼写检查错误类型</span>
+                </div>
+                <br/>
+                <div align="center">
+                    <table border="0" frame="hsides" cellpadding="10">
+                        <caption>表11. 错误字幕和修改建议展示</caption>
+                        <tr>
+                            <th>错误类型</th>
+                            <th>字幕原句</th>
+                            <th>修改建议</th>
+                        </tr>
+                        <tr>
+                            <td align="center">歌词翻译（节选）</td>
+                            <td align="center">Horses over the steppe</td>
+                            <td align="center">steppe: stepped steppe steppes stepper(Possible spelling mistake found.)</td>
+                        </tr>
+                        <tr>
+                            <td align="center">人名地名（节选）</td>
+                            <td align="center">Would have turned Shangjing upside down</td>
+                            <td align="center">Shangjing: Changing, Hanging, Shingling, Spangling, Shagging, Slanging(Possible spelling mistake found.)</td>
+                        </tr>
+                        <tr>
+                            <td align="center">英美差异</td>
+                            <td align="center">in private any more.</td>
+                            <td align="center">any more : anymore(Did you mean the adverb anymore?)</td>
+                        </tr>
+                        <tr>
+                            <td align="center">英美差异</td>
+                            <td align="center">I can't stand it any more.</td>
+                            <td align="center">any more : anymore(Did you mean the adverb anymore?)</td>
+                        </tr>
+                        <tr>
+                            <td align="center">语法错误</td>
+                            <td align="center">than the gossip spread out quickly.</td>
+                            <td align="center">than : Then(Did you mean Then?)</td>
+                        </tr>
+                        <tr>
+                            <td align="center">语法错误</td>
+                            <td align="center">than : Then(Did you mean Then?)</td>
+                            <td align="center">so that : (“so that” at the beginning of a sentence requires a 2nd clause. Maybe a comma, question or exclamation mark is missing, or the sentence is incomplete and should be joined with the following sentence.)</td>
+                        </tr>
+                        <tr>
+                            <td align="center">语法错误</td>
+                            <td align="center">If I don't follow the vine</td>
+                            <td align="center">If : (“If” at the beginning of a sentence usually requires a 2nd clause. Maybe a comma, question or exclamation mark is missing, or the sentence is incomplete and should be joined with the following sentence.)</td>
+                        </tr>
+                        <tr>
+                            <td align="center">语法错误</td>
+                            <td align="center">she can do whatever she want.</td>
+                            <td align="center">want : wants wanted(The pronoun 'she' is usually used with a third-person or a past tense verb: wants, wanted.)</td>
+                        </tr>
+                        <tr>
+                            <td align="center">单词错拼</td>
+                            <td align="center">and should be nurseed with great care.</td>
+                            <td align="center">nurseed : nursed(Possible spelling mistake. Did you mean nursed, the past tense form of the verb 'nurse'?).</td>
+                        </tr>
+                        <tr>
+                            <td align="center">单词错拼</td>
+                            <td align="center">The lastest style.</td>
+                            <td align="center">lastest : fastest latest vastest last est(Possible spelling mistake found.)</td>
+                        </tr>
+                        <tr>
+                            <td align="center">单词错拼</td>
+                            <td align="center">and did't care about Qingge's death.</td>
+                            <td align="center">did't : didn't(Did you mean didn't?)</td>
+                        </tr>
+                        <tr>
+                            <td align="center">单词错拼</td>
+                            <td align="center">Han Derang is just a Sountherner</td>
+                            <td align="center">Sountherner : Southerner(Possible spelling mistake found.)</td>
+                        </tr>
+                        <tr>
+                            <td align="center">标点误用</td>
+                            <td align="center">will I feel at ease.</td>
+                            <td align="center">. : ?(If this is a question, use a question mark.)</td>
+                        </tr>
+                    </table>
+                </div>
+                <p>鉴于歌曲翻译和人名地名均来自术语库的既定翻译，所以不能作为分析的有效结果。检查效果最好的当属单词拼写和英美差异，所有错误均已找出。语法错误和标点错误的检查准确率较低，而字幕句子成分不全是影响语法和标点检查准确率的重要因素。例如“so that Han Derang will”是前文“These three things were done to stain Yanyan's reputation,”的结果状语从句，但修改建议中认为“so that”属于从句，而“Han Derang will”属于主句，自然是不准确的，不过机器也检测出词句成分不全，因而并未高亮显示。再如“will I feel at ease.”前文其实是“Only when...”的句式，要求部分倒装，所以这本就是陈述句语气。这两个句子都按照字数要求进行断句处理，所以句子成分和句意都不完整，影响了检查结果的准确性。</p>
+                <div align="center">
+                    <img src="images/31.png" width="720"/>
+                    <br/>
+                    <span>图31. 《超级维修站》第1集中文字幕拼写检查结果</span>
+                </div>
+                <p>检查中文字幕时，译视界所提供的修改意见大多不具参考价值，如图31所示，“A330-300客机”是飞机机型固有名称，“25000工时”之间也并不一定要加量词“个”。中英文语法之间差异众多，相比英文句子，中文句子内部成分的排列组合更为灵活，仅凭规则和算法来检查中文句子错误，准确率无法提高的。</p>
+            <h3><a name="tag 4.4.2"></a>4.4.2 一致性检查评价</h3>
+                <p>中英字幕都会存在原文字幕重复的情况。英语纪录片开头通常包含后续内容片段，以引起观众兴趣，必须保证前后翻译的一致性，而英语电视剧中常见的寒暄问候用语，如“What’s up”、“Okay”、“What’s wrong”等在同一集中往往会反复出现。笔者继续选择《超级维修站》第一集中英双语字幕为例，一致性检查结果见图32。</p>
+                <div align="center">
+                    <img src="images/32.png" width="720"/>
+                    <br/>
+                    <span>图32. 《超级维修站》第1集双语字幕一致性检查结果</span>
+                </div>
+                <p>为保证译文字幕的有趣性，字幕译者通常会根据视频内容，将同样的原文字幕翻译为不同的内容。例如“Alright”根据说话者语速，译者处理为“好”和“没事”，使得译文字幕在原文字幕的时间限制下，完整传达原文字幕信息。“Okay”同样如此。如果都翻译为“好的”或“没事”，那和机器翻译别无二致。至于两个“cargo hold”，后者是出现于长句末尾，译者考虑到字幕的时空限制，将“cargo hold”的译文“货舱组”置于前一句字幕当中。虽然一致性检查的结果并非完全准确，但能提示字幕译者再度核实译文一致性是否存在问题。</p>
+            <h3><a name="tag 4.4.3"></a>4.4.3 术语纠错评价</h3>
+                <p>术语就纠错功能目前需要手动打开术语库后，才能开始进行术语检查，检查结果中包含涉及术语的字幕和相关术语，需要译者逐条进行检查。笔者以纪录片《皮肤的奥秘》第二集字幕为例，进行了“术语纠错”功能的测试，但鉴于本功能以人工操作为主，评价价值不大。不过笔者认为该功能还有很多改进空间。一是结果中，术语翻译正确和术语翻译存在疑似错误的字幕未能分类展示或做出相应的颜色标记。二是结果中，相关术语的原文和译文应该在字幕中高亮显示，帮助译者快速查看纠错。</p>
+                <div align="center">
+                    <img src="images/33.png" width="720"/>
+                    <br/>
+                    <span>图33. 《皮肤的奥秘》第2集双语字幕术语纠错检查结果</span>
+                </div>
+            <h2>4.5 小结</h2>
+                <p>“智能纠错”选项卡下的这三个功能都能帮助译者快速查找字幕中的低级错误、前后文一致性错误、术语翻译错误，能极大提高字幕翻译质量。但字幕翻译要受到时空条件的影响，很多长句往往需要断句处理，这会影响拼写检查和一致性检查结果的准确性。术语纠错功能目前人工因素太多，功能还有待完善。</p>
+        </div>
+        <div class="page">
+            <a href="single 3-译视界产品介绍.html#page3">上一小节</a>
+            <a href="#top4">返回顶部</a>
+            <a href="single 5-参考文献.html#page5">下一小节</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

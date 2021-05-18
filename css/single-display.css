@@ -1,0 +1,54 @@
+.sidebar {
+    position: fixed;
+    background-color: rgb(122, 186, 189);
+    width: 16%;
+    height: 100%;
+    margin: 49px 0 0 0;
+}
+
+.content {
+    float: right;
+    width: 70%;
+    height: 100%;
+    margin: 49px 80px 0 250px
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+   .content h1{
+        font-family:Microsoft YaHei;
+        color: cadetblue;
+        font-size: 24pt;
+    }
+    
+    .content h2{
+        font-family:Microsoft YaHei;
+        font-size: 18pt;
+        color:black
+    }
+
+    .content p{
+        font-family: Microsoft YaHei;
+        font-size: 14pt;
+        text-indent: 2em;
+        color:black
+    }
+
+    .page{
+        text-align: center;
+        margin-left: 190px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .page a{
+        text-decoration: none;
+        border:0px solid #f9d52b;
+        font-weight: bold; 
+        padding: 10px 12px; 
+        margin: 60px;
+        color: #ffffff; 
+        background-color:cadetblue;
+        cursor: pointer;
+    }

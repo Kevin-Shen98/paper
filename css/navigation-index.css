@@ -1,0 +1,36 @@
+body { 
+  margin: 0; 
+  padding: 0; 
+  }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  width: 100%;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* 当鼠标悬停时把链接颜色更改为 #111（黑色） */
+li a:hover {
+  background-color: #111;
+}
+
+li a.active {
+  background-color: #c99739;
+}
